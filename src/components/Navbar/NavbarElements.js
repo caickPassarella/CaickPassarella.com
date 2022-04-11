@@ -6,8 +6,8 @@ export const Nav = styled.nav`
   background: #F7F7F7;
   height: 80px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; //Center at main axis
+  align-items: center; //Center at cross-axis
   position: sticky;
   top: 0;
   z-index: 10;
@@ -28,7 +28,8 @@ export const NavbarContainer = styled.div`
 
 export const NavLogo = styled(LinkR)`
   display:flex;
-  justify-self: flex-start;
+  justify-content: space-between;
+  align-items: center;
   color: #AB9B8C;
   cursor: pointer;
   font-size: 1.5rem;
@@ -39,14 +40,10 @@ export const NavLogo = styled(LinkR)`
 `;
 
 export const MobileIcon = styled.div`
-display: none;
+display: none; //don't display at normal desktop view
 
 @media screen and (max-width: 768px) {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(-100%, 60%);
+  display: flex;
   font-size: 1.8rem;
   cursor: pointer;
   color: #AB9B8C;
