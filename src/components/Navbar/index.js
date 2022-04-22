@@ -1,31 +1,31 @@
-import {FaBars} from 'react-icons/fa';
-import {
-  Nav,
-  NavbarContainer,
-  NavLogo,
-  MobileIcon,
-  NavMenu,
-  NavItem,
-  NavLinks,
-} from './NavbarElements';
+import { FaBars } from 'react-icons/fa';
+import { Nav, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLinks } from './NavbarElements';
+import { DropdownContent, DropdownLi } from '../Dropdown/DropdownElements';
+import { Dropdown } from '../Dropdown';
 
 const Navbar = () => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to='/'>Caick</NavLogo>
           <MobileIcon>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to='about'>About</NavLinks>
+              <NavLinks to="home">Home</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='discover'>Discover</NavLinks>
+              <NavLinks to="resume">Resume</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="contact">Contact</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="made">How this site was made</NavLinks>
             </NavItem>
           </NavMenu>
+          <Dropdown />
         </NavbarContainer>
       </Nav>
     </>

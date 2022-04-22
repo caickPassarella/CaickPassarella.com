@@ -1,0 +1,5 @@
+{
+  "editor.formatOnSave": true,
+  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
