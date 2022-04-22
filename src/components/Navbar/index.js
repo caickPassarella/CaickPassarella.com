@@ -1,14 +1,23 @@
+import PropTypes from 'prop-types';
 import { FaBars } from 'react-icons/fa';
-import { Nav, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLinks } from './NavbarElements';
-import { DropdownContent, DropdownLi } from '../Dropdown/DropdownElements';
+import {
+  Nav,
+  NavbarContainer,
+  MobileIcon,
+  NavMenu,
+  NavItem,
+  NavLinks,
+  NavLogo,
+} from './NavbarElements';
 import { Dropdown } from '../Dropdown';
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <MobileIcon>
+          <NavLogo>Caick Passarella</NavLogo>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
@@ -30,6 +39,10 @@ const Navbar = () => {
       </Nav>
     </>
   );
+};
+
+Navbar.propTypes = {
+  toggle: PropTypes.string,
 };
 
 export default Navbar;
