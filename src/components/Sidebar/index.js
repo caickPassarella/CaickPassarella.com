@@ -10,7 +10,7 @@ import {
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
-    <SidebarContainer isOpen={isOpen} onClick={toggle}>
+    <SidebarContainer isOpen={isOpen}>
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
@@ -27,8 +27,8 @@ const Sidebar = ({ isOpen, toggle }) => {
 };
 
 Sidebar.propTypes = {
-  isOpen: PropTypes.string,
-  toggle: PropTypes.string,
+  isOpen: PropTypes.bool,
+  toggle: PropTypes.func,
 };
 
 export default Sidebar;

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { DropdownContent, DropdownLi } from './DropdownElements';
-import { NavMenu, NavLinks } from '../Navbar/NavbarElements';
+import { DropdownMenu, DropdownContent, DropdownLi, DropdownLinks } from './DropdownElements';
 import { MenuItems } from './MenuItems';
 
 export function Dropdown() {
@@ -10,20 +9,20 @@ export function Dropdown() {
 
   return (
     <>
-      <NavMenu onClick={handleClick}>
+      <DropdownMenu onClick={handleClick}>
         <DropdownLi>
-          <NavLinks to="english">English</NavLinks>
+          <DropdownLinks to="english">English</DropdownLinks>
           <DropdownContent>
             {MenuItems.map((item, index) => {
               return (
-                <NavLinks key={index} to={item.path} onClick={() => setClick(false)}>
+                <DropdownLinks key={index} to={item.path} onClick={handleClick}>
                   {item.title}
-                </NavLinks>
+                </DropdownLinks>
               );
             })}
           </DropdownContent>
         </DropdownLi>
-      </NavMenu>
+      </DropdownMenu>
     </>
   );
 }
