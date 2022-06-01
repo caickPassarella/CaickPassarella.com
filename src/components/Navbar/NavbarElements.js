@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   align-items: center; //Center at cross-axis
   background: #f7f7f7;
   height: 80px;
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 10;
 
@@ -75,7 +75,7 @@ export const NavLinks = styled(LinkS)`
   display: flex;
   align-items: center;
   color: #ab9b8c;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   text-decoration: none;
   height: 100%;
   cursor: pointer;
