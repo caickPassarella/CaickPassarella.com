@@ -6,7 +6,7 @@ export const Nav = styled.nav`
   justify-content: center; //Center at main axis
   align-items: center; //Center at cross-axis
   background: #f7f7f7;
-  height: 80px;
+  height: 100px;
   position: relative;
   top: 0;
   z-index: 10;
@@ -75,6 +75,7 @@ export const NavLinks = styled(LinkS)`
   display: flex;
   align-items: center;
   color: #ab9b8c;
+  font-size: 20px;
   letter-spacing: 1.5px;
   text-decoration: none;
   height: 100%;

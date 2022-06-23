@@ -8,7 +8,7 @@ import {
 
 export function Paragraph(props) {
   function handleParagraph() {
-    if (props.title === true) {
+    if (props.title) {
       return (
         <ParagraphWrapper>
           <ParagraphTitle>{props.header}</ParagraphTitle>

@@ -7,15 +7,27 @@ export function InfoCard(props) {
     if (props.reverse === true) {
       return (
         <InfoWrapper>
-          {props.image ? <InfoImage src={props.image} /> : <></>}
-          <Paragraph title={props.title} header={props.headerText} text={props.paragraphtext} />
+          {props.image ? (
+            <div>
+              <InfoImage src={props.image} />
+            </div>
+          ) : (
+            <></>
+          )}
+          <Paragraph title={props.title} header={props.header} text={props.paragraph} />
         </InfoWrapper>
       );
     } else {
       return (
         <InfoWrapper>
-          <Paragraph title={props.title} header={props.headerText} text={props.paragraphtext} />
-          {props.image ? <InfoImage src={props.image} /> : <></>}
+          <Paragraph title={props.title} header={props.header} text={props.paragraph} />
+          {props.image ? (
+            <div>
+              <InfoImage src={props.image} />
+            </div>
+          ) : (
+            <></>
+          )}
         </InfoWrapper>
       );
     }
@@ -28,6 +40,6 @@ InfoCard.propTypes = {
   reverse: PropTypes.bool,
   title: PropTypes.bool,
   image: PropTypes.string,
-  headerText: PropTypes.string,
-  paragraphtext: PropTypes.string,
+  header: PropTypes.string,
+  paragraph: PropTypes.string,
 };
