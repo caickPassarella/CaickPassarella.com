@@ -35,6 +35,7 @@ export const DropdownLinks = styled(LinkS)`
   display: flex;
   align-items: center;
   left: 20px;
+  font-size: 20px;
   color: #ab9b8c;
   text-decoration: none;
   padding: 0 1rem;

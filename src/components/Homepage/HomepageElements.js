@@ -12,11 +12,3 @@ export const HomeWrapper = styled.div`
   display: flex;
   flex-direction: column;
 `;
-
-export const Divider = styled.hr`
-  height: 1px;
-  background-color: #9f9182;
-  width: 40%;
-  margin: auto;
-  opacity: 50%;
-`;

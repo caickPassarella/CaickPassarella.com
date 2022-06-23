@@ -1,5 +1,5 @@
 import { InfoCard } from '../InfoCard';
-import { HomeContainer, HomeWrapper, Divider } from './HomepageElements.js';
+import { HomeContainer, HomeWrapper } from './HomepageElements.js';
 import img1 from '../../images/image1.png';
 
 export function Homepage() {
@@ -10,13 +10,9 @@ export function Homepage() {
     <HomeContainer>
       <HomeWrapper>
         <InfoCard header={header} image={img1} title={true} />
-        <Divider />
         <InfoCard header="Who am I" paragraph={paragraph} />
-        <Divider />
         <InfoCard header="Product" image={img1} reverse={true} paragraph={paragraph} />
-        <Divider />
         <InfoCard header="Engineering" paragraph={paragraph} />
-        <Divider />
         <InfoCard header="Design" reverse={true} paragraph={paragraph} />
       </HomeWrapper>
     </HomeContainer>
