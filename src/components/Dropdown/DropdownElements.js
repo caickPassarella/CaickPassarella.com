@@ -5,6 +5,7 @@ export const DropdownMenu = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
+  margin-right: 40px;
   text-align: center;
 
   @media screen and (max-width: 768px) {

@@ -14,13 +14,23 @@ export function InfoCard(props) {
           ) : (
             <></>
           )}
-          <Paragraph title={props.title} header={props.header} text={props.paragraph} />
+          <Paragraph
+            title={props.title}
+            header={props.header}
+            text={props.paragraph}
+            reverse={props.reverse}
+          />
         </InfoWrapper>
       );
     } else {
       return (
         <InfoWrapper>
-          <Paragraph title={props.title} header={props.header} text={props.paragraph} />
+          <Paragraph
+            title={props.title}
+            header={props.header}
+            text={props.paragraph}
+            reverse={props.reverse}
+          />
           {props.image ? (
             <div>
               <InfoImage src={props.image} />

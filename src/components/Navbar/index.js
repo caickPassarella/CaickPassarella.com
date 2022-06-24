@@ -34,7 +34,6 @@ const Navbar = ({ toggle }) => {
               <NavLinks to="made">How this site was made</NavLinks>
             </NavItem>
           </NavMenu>
-          <Dropdown />
         </NavbarContainer>
       </Nav>
     </>

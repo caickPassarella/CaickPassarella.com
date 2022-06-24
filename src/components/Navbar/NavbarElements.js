@@ -6,10 +6,9 @@ export const Nav = styled.nav`
   justify-content: center; //Center at main axis
   align-items: center; //Center at cross-axis
   background: #f7f7f7;
-  height: 100px;
+  height: 120px;
   position: relative;
   top: 0;
-  z-index: 10;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -78,19 +77,31 @@ export const NavLinks = styled(LinkS)`
   font-size: 20px;
   letter-spacing: 1.5px;
   text-decoration: none;
+  transition: color 0.2s linear;
   height: 100%;
   cursor: pointer;
   position: relative;
 
   &:hover {
+    color: #9f9182;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    transition: opacity 0.2s linear;
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+    border-radius: 200px;
+    border: 1px solid #9f9182;
+  }
+
+  &:hover {
     &::after {
-      content: '';
-      position: absolute;
-      bottom: 5px;
-      width: 100%;
-      height: 3px;
-      border-radius: 200px;
-      border: 1px solid #9f9182;
+      opacity: 1;
+      transition: opacity 0.2s linear;
     }
     /* border-bottom: 3px solid #9f9182; */
   }

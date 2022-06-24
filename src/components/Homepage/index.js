@@ -11,8 +11,8 @@ export function Homepage() {
       <HomeWrapper>
         <InfoCard header={header} image={img1} title={true} />
         <InfoCard header="Who am I" paragraph={paragraph} />
-        <InfoCard header="Product" image={img1} reverse={true} paragraph={paragraph} />
-        <InfoCard header="Engineering" paragraph={paragraph} />
+        <InfoCard header="Product" reverse={true} paragraph={paragraph} />
+        <InfoCard header="Engineering" image={img1} paragraph={paragraph} />
         <InfoCard header="Design" reverse={true} paragraph={paragraph} />
       </HomeWrapper>
     </HomeContainer>
