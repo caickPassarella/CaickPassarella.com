@@ -3,27 +3,10 @@ import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
   display: flex;
-  justify-content: center; //Center at main axis
-  align-items: center; //Center at cross-axis
-  background: #f7f7f7;
-  height: 120px;
-  position: relative;
-  top: 0;
+  height: 75px;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
-  }
-`;
-
-export const NavbarContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  z-index: 1;
-  width: 100%;
-
-  @media screen and (max-width: 768px) {
-    justify-content: space-between;
-    padding: 0 25px 0 0;
   }
 `;
 
@@ -34,7 +17,7 @@ export const MobileIcon = styled.div`
     display: flex;
     font-size: 1.8rem;
     cursor: pointer;
-    color: #ab9b8c;
+    color: #424242;
   }
 `;
 
@@ -43,7 +26,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  padding: 0 35px;
+  padding: 0 25px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -51,7 +34,6 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 35px;
   padding: 0 1rem;
 `;
 
@@ -61,7 +43,7 @@ export const NavLogo = styled.div`
   @media screen and (max-width: 768px) {
     display: flex;
     align-items: center;
-    color: #ab9b8c;
+    color: #424242;
     cursor: pointer;
     font-size: 1.5rem;
     margin-left: 2.4rem;
@@ -73,8 +55,7 @@ export const NavLogo = styled.div`
 export const NavLinks = styled(LinkS)`
   display: flex;
   align-items: center;
-  color: #ab9b8c;
-  font-size: 20px;
+  color: #424242;
   letter-spacing: 1.5px;
   text-decoration: none;
   transition: color 0.2s linear;
@@ -83,19 +64,19 @@ export const NavLinks = styled(LinkS)`
   position: relative;
 
   &:hover {
-    color: #9f9182;
+    color: #424242;
   }
 
   &:after {
     content: '';
     position: absolute;
-    bottom: 3px;
+    bottom: -1px;
     transition: opacity 0.2s linear;
-    width: 100%;
-    height: 3px;
+    width: 99%;
+    height: 1px;
     opacity: 0;
     border-radius: 200px;
-    border: 1px solid #9f9182;
+    border: 1px solid #424242;
   }
 
   &:hover {
@@ -103,6 +84,6 @@ export const NavLinks = styled(LinkS)`
       opacity: 1;
       transition: opacity 0.2s linear;
     }
-    /* border-bottom: 3px solid #9f9182; */
+    /* border-bottom: 3px solid #424242; */
   }
 `;

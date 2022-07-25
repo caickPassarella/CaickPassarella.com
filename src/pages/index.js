@@ -12,9 +12,11 @@ export default function Home() {
 
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
-      <Homepage />
+      <div style={{ border: '1px solid black', margin: '11px', color: '#424242' }}>
+        <Sidebar isOpen={isOpen} toggle={toggle} />
+        <Navbar toggle={toggle} />
+        <Homepage />
+      </div>
     </>
   );
 }
