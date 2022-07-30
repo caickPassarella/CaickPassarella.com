@@ -26,7 +26,6 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  padding: 0 25px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -34,7 +33,7 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  padding: 0 1rem;
+  padding: 0 25px;
 `;
 
 export const NavLogo = styled.div`
@@ -55,6 +54,7 @@ export const NavLogo = styled.div`
 export const NavLinks = styled(LinkS)`
   display: flex;
   align-items: center;
+  font-size: 15px;
   color: #424242;
   letter-spacing: 1.5px;
   text-decoration: none;
@@ -62,10 +62,6 @@ export const NavLinks = styled(LinkS)`
   height: 100%;
   cursor: pointer;
   position: relative;
-
-  &:hover {
-    color: #424242;
-  }
 
   &:after {
     content: '';
@@ -80,10 +76,11 @@ export const NavLinks = styled(LinkS)`
   }
 
   &:hover {
+    color: #000000;
     &::after {
       opacity: 1;
+      font-weight: bold;
       transition: opacity 0.2s linear;
     }
-    /* border-bottom: 3px solid #424242; */
   }
 `;

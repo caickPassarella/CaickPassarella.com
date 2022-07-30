@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <>
-      <div style={{ border: '1px solid black', margin: '11px', color: '#424242' }}>
+      <div style={{ border: '1px solid #424242', margin: '11px' }}>
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle} />
         <Homepage />

@@ -5,6 +5,7 @@ import {
   ParagraphTitle,
   ParagraphHeader,
   ParagraphText,
+  ParagraphSubTitle,
 } from './ParagraphElements';
 
 export function Paragraph(props) {
@@ -13,6 +14,7 @@ export function Paragraph(props) {
       return (
         <ParagraphWrapper>
           <ParagraphTitle>{props.header}</ParagraphTitle>
+          <ParagraphSubTitle>{props.text}</ParagraphSubTitle>
         </ParagraphWrapper>
       );
     } else if (props.reverse) {
