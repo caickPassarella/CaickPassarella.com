@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const InfoWrapper = styled.div`
   display: flex;
   align-items: center;
-  padding: 0 100px 50px;
+  padding: 100px;
 `;
 
 export const ImageWrapper = styled.div`
@@ -17,5 +17,5 @@ export const TitleImage = styled.img`
 `;
 
 export const InfoImage = styled.img`
-  width: 600px;
+  width: 500px;
 `;

@@ -1,6 +1,7 @@
 import { InfoCard } from '../InfoCard';
-import { HomeContainer, HomeWrapper } from './HomepageElements.js';
-import { Lightbulb, CoffeeHand, BrewingCoffee, Latte } from '../../images';
+import { HomeContainer, HomeWrapper, ImageWrapper, Subtitle } from './HomepageElements.js';
+import { ImageCard } from '../imageCard';
+import { Lightbulb, CoffeeHand, BrewingCoffee, Latte, Notes, Drawing, Laptop } from '../../images';
 
 export function Homepage() {
   const header = 'Caick \nPassarella';
@@ -19,6 +20,12 @@ export function Homepage() {
         <InfoCard header="Product" image={CoffeeHand} reverse={true} paragraph={paragraph} />
         <InfoCard header="Engineering" image={BrewingCoffee} paragraph={paragraph} />
         <InfoCard header="Design" image={Latte} reverse={true} paragraph={paragraph} />
+        <Subtitle className="subtitle">How this site was made</Subtitle>
+        <ImageWrapper>
+          <ImageCard image={Notes} subtext="Notes" />
+          <ImageCard image={Drawing} subtext="Drawing" />
+          <ImageCard image={Laptop} subtext="Laptop" />
+        </ImageWrapper>
       </HomeWrapper>
     </HomeContainer>
   );
