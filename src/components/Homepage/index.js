@@ -1,4 +1,13 @@
-import { Lightbulb, CoffeeHand, BrewingCoffee, Latte, Notes, Drawing, Laptop } from '../../images';
+import {
+  Lightbulb,
+  CoffeeHand,
+  BrewingCoffee,
+  Latte,
+  Notes,
+  Drawing,
+  Laptop,
+  Men,
+} from '../../images';
 import { HomeContainer, HomeWrapper, ImageWrapper, Subtitle } from './HomepageElements.js';
 import { InfoCard } from '../InfoCard';
 import { ImageCard } from '../ImageCard';
@@ -17,15 +26,15 @@ export function Homepage() {
           image={Lightbulb}
           title={true}
         />
-        <InfoCard header="Who am I" paragraph={paragraph} />
+        <InfoCard header="Who am I" paragraph={paragraph} image={Men} />
         <InfoCard header="Product" image={CoffeeHand} reverse={true} paragraph={paragraph} />
         <InfoCard header="Engineering" image={BrewingCoffee} paragraph={paragraph} />
         <InfoCard header="Design" image={Latte} reverse={true} paragraph={paragraph} />
         <Subtitle className="subtitle">How this site was made</Subtitle>
         <ImageWrapper>
           <ImageCard image={Notes} subtext="Notes" />
-          <ImageCard image={Drawing} subtext="Drawing" />
-          <ImageCard image={Laptop} subtext="Laptop" />
+          <ImageCard image={Drawing} subtext="Design" />
+          <ImageCard image={Laptop} subtext="Technology" />
         </ImageWrapper>
         <Footer />
       </HomeWrapper>

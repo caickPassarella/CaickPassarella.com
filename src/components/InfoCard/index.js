@@ -1,13 +1,22 @@
 import PropTypes from 'prop-types';
 import { Paragraph } from '../Paragraph';
-import { InfoWrapper, InfoImage, TitleImage, ImageWrapper } from './InfoCardElements';
+import { InfoWrapper, InfoImage, ImageWrapper, ImageShadow } from './InfoCardElements';
 
 export function InfoCard(props) {
   function handleImage() {
-    if (props.title) {
-      return <TitleImage src={props.image} />;
+    if (props.image) {
+      return (
+        <ImageWrapper>
+          {props.title ? (
+            <InfoImage title="true" src={props.image} />
+          ) : (
+            <InfoImage src={props.image} />
+          )}
+          <ImageShadow />
+        </ImageWrapper>
+      );
     } else {
-      return <InfoImage src={props.image} />;
+      return <></>;
     }
   }
 
@@ -15,7 +24,7 @@ export function InfoCard(props) {
     if (props.reverse === true) {
       return (
         <InfoWrapper>
-          {props.image ? <ImageWrapper>{handleImage()}</ImageWrapper> : <></>}
+          {handleImage()}
           <Paragraph
             title={props.title}
             header={props.header}
@@ -33,7 +42,7 @@ export function InfoCard(props) {
             text={props.paragraph}
             reverse={props.reverse}
           />
-          {props.image ? <ImageWrapper>{handleImage()}</ImageWrapper> : <></>}
+          {handleImage()}
         </InfoWrapper>
       );
     }

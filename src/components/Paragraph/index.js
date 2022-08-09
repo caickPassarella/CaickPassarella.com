@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types';
 import {
-  ParagraphWrapper,
-  ReverseParagraphWrapper,
   ParagraphTitle,
   ParagraphHeader,
   ParagraphText,
@@ -12,24 +10,24 @@ export function Paragraph(props) {
   function handleParagraph() {
     if (props.title) {
       return (
-        <ParagraphWrapper>
+        <div>
           <ParagraphTitle>{props.header}</ParagraphTitle>
           <ParagraphSubTitle>{props.text}</ParagraphSubTitle>
-        </ParagraphWrapper>
+        </div>
       );
     } else if (props.reverse) {
       return (
-        <ReverseParagraphWrapper>
+        <div style={{ textAlign: 'end' }}>
           <ParagraphHeader>{props.header}</ParagraphHeader>
           <ParagraphText>{props.text}</ParagraphText>
-        </ReverseParagraphWrapper>
+        </div>
       );
     } else {
       return (
-        <ParagraphWrapper>
+        <div>
           <ParagraphHeader>{props.header}</ParagraphHeader>
           <ParagraphText>{props.text}</ParagraphText>
-        </ParagraphWrapper>
+        </div>
       );
     }
   }

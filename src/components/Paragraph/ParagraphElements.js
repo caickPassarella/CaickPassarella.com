@@ -1,14 +1,5 @@
 import styled from 'styled-components';
 
-export const ParagraphWrapper = styled.div`
-  margin-right: auto;
-`;
-
-export const ReverseParagraphWrapper = styled.div`
-  margin-left: auto;
-  text-align: end;
-`;
-
 export const ParagraphHeader = styled.h1`
   color: #424242;
   line-height: 138%;
@@ -19,7 +10,7 @@ export const ParagraphHeader = styled.h1`
 
 export const ParagraphSubTitle = styled.h2`
   color: #424242;
-  font-size: 23px;
+  font-size: 28px;
   font-weight: 300;
   font-style: normal;
   letter-spacing: 0.1em;
@@ -27,7 +18,7 @@ export const ParagraphSubTitle = styled.h2`
 
 export const ParagraphTitle = styled(ParagraphHeader)`
   color: #424242;
-  font-size: 75px;
+  font-size: 95px;
   font-weight: bolder;
   font-style: normal;
   letter-spacing: 0.1em;

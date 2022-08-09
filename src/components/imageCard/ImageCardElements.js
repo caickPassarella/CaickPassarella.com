@@ -13,7 +13,7 @@ export const SquareCard = styled.div`
   width: 300px;
   height: 300px;
   border: 2px solid #424242;
-  border-radius: 44px;
+  border-radius: 30px;
   margin: 30px;
 `;
 

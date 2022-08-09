@@ -33,7 +33,7 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  padding: 0 25px;
+  padding: 0 30px;
 `;
 
 export const NavLogo = styled.div`
@@ -54,7 +54,7 @@ export const NavLogo = styled.div`
 export const NavLinks = styled(LinkS)`
   display: flex;
   align-items: center;
-  font-size: 15px;
+  font-size: 18px;
   color: #424242;
   letter-spacing: 1.5px;
   text-decoration: none;
