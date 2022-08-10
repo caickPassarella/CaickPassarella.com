@@ -6,7 +6,7 @@ export const InfoImage = styled.img`
   height: 235px;
 `;
 
-export const SquareCard = styled.div`
+export const SquareCard = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,6 +15,7 @@ export const SquareCard = styled.div`
   border: 2px solid #424242;
   border-radius: 30px;
   margin: 30px;
+  cursor: pointer;
 `;
 
 export const SubText = styled.p`

@@ -4,7 +4,7 @@ import { InfoImage, SquareCard, SubText } from './ImageCardElements';
 export function ImageCard(props) {
   return (
     <div>
-      <SquareCard>
+      <SquareCard onClick={props.onClick}>
         <InfoImage src={props.image} />
       </SquareCard>
       <SubText>{props.subtext}</SubText>
@@ -15,4 +15,5 @@ export function ImageCard(props) {
 ImageCard.propTypes = {
   image: PropTypes.string,
   subtext: PropTypes.string,
+  onClick: PropTypes.func,
 };

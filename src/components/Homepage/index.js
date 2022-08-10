@@ -11,12 +11,17 @@ import {
 import { HomeContainer, HomeWrapper, ImageWrapper, Subtitle } from './HomepageElements.js';
 import { InfoCard } from '../InfoCard';
 import { ImageCard } from '../ImageCard';
-import { Footer } from '../Footer';
+import { Modal } from '../Modal';
+
+import { useState } from 'react';
 
 export function Homepage() {
   const header = 'Caick \nPassarella';
   const paragraph =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc iaculis posuere libero, at laoreet tortor cursus posuere. Fusce fermentum purus eu convallis feugiat. Suspendisse bibendum, erat in rhoncus sollicitudin, nunc magna tincidunt nibh, vitae euismod felis est sit amet erat. Duis sed ex porta, blandit mi ut. Nunc magna tincidunt nibh, vitae euismod felis est sit amet erat. Duis sed ex porta, blandit mi ut.';
+
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <HomeContainer>
       <HomeWrapper>
@@ -32,11 +37,17 @@ export function Homepage() {
         <InfoCard header="Design" image={Latte} reverse={true} paragraph={paragraph} />
         <Subtitle className="subtitle">How this site was made</Subtitle>
         <ImageWrapper>
-          <ImageCard image={Notes} subtext="Notes" />
+          <ImageCard
+            image={Notes}
+            subtext="Notes"
+            onClick={() => {
+              setOpenModal(!openModal);
+            }}
+          />
           <ImageCard image={Drawing} subtext="Design" />
           <ImageCard image={Laptop} subtext="Technology" />
+          {openModal && <Modal setOpenModal={setOpenModal} />}
         </ImageWrapper>
-        <Footer />
       </HomeWrapper>
     </HomeContainer>
   );
