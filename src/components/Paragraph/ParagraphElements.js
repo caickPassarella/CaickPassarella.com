@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const ParagraphHeader = styled.h1`
   color: #424242;
-  line-height: 138%;
   letter-spacing: 2px;
   font-size: 20px;
   white-space: pre-line;

@@ -1,22 +1,31 @@
 import PropTypes from 'prop-types';
 
-import { ModalContainer, ModalTitle, ModalText, ModalIcon, ModalWrapper } from './ModalElements';
+import {
+  ModalBackground,
+  ModalContainer,
+  ModalWrapper,
+  ModalTitle,
+  ModalText,
+  ModalIcon,
+  ModalFooter,
+} from './ModalElements';
 
 export function Modal(props) {
   return (
-    <ModalContainer>
-      <ModalWrapper>
-        <ModalTitle>Notes</ModalTitle>
-        <ModalText>
-          Before starting a project, to make sure it will go in the right direction, we need to
-          write, document, and prioritize. And that’s what I did for this website.
-        </ModalText>
-        <ModalText>Here are some of the tools that helped me with that:</ModalText>
-      </ModalWrapper>
-    </ModalContainer>
+    <ModalBackground onClick={() => props.setOpenModal(false)}>
+      <ModalContainer>
+        <ModalWrapper>
+          <ModalTitle>{props.type}</ModalTitle>
+          <ModalText>{props.text}</ModalText>
+        </ModalWrapper>
+        <ModalFooter>caickpassarella.com</ModalFooter>
+      </ModalContainer>
+    </ModalBackground>
   );
 }
 
 Modal.propTypes = {
   setOpenModal: PropTypes.func,
+  type: PropTypes.string,
+  text: PropTypes.string,
 };
