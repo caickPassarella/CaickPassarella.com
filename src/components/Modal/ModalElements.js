@@ -33,6 +33,7 @@ export const ModalWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  width: 100%;
   padding: 60px;
 `;
 
@@ -52,7 +53,17 @@ export const ModalText = styled.p`
   letter-spacing: 2px;
 `;
 
-export const ModalIcon = styled.img``;
+export const IconsWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+`;
+
+export const ModalIcon = styled.img`
+  width: 40px;
+  margin: 10px;
+`;
 
 export const ModalFooter = styled.p`
   color: #424242;

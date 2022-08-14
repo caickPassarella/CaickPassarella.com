@@ -9,6 +9,19 @@ import {
   Laptop,
   Men,
 } from '../../images';
+
+import {
+  Figma,
+  Github,
+  GoogleDocs,
+  Jira,
+  LinkedIn,
+  Linux,
+  Notion,
+  Google,
+  ReactLogo,
+  Javascript,
+} from '../../images';
 import { HomeContainer, HomeWrapper, ImageWrapper, Subtitle } from './HomepageElements.js';
 import { InfoCard } from '../InfoCard';
 import { ImageCard } from '../ImageCard';
@@ -31,18 +44,27 @@ export function Homepage() {
   const [openModal, setOpenModal] = useState(false);
   const [modalType, setModalType] = useState('');
   const [modalText, setModalText] = useState('');
+  const [modalIcons, setModalIcons] = useState([]);
 
   function handleModal(type) {
     if (!type) return;
 
-    setModalType(type);
     switch (type) {
       case 'Notes':
+        setModalType(type);
         setModalText(modalNotesText);
+        setModalIcons([GoogleDocs, Notion]);
+        break;
       case 'Design':
+        setModalType(type);
         setModalText(modalDesignText);
+        setModalIcons([Figma, Google]);
+        break;
       case 'Technology':
+        setModalType(type);
         setModalText(modalTechText);
+        setModalIcons([Github, ReactLogo, Javascript]);
+        break;
     }
     setOpenModal(!openModal);
   }
@@ -83,7 +105,14 @@ export function Homepage() {
               handleModal('Technology');
             }}
           />
-          {openModal && <Modal type={modalType} text={modalText} setOpenModal={setOpenModal} />}
+          {openModal && (
+            <Modal
+              type={modalType}
+              text={modalText}
+              icons={modalIcons}
+              setOpenModal={setOpenModal}
+            />
+          )}
         </ImageWrapper>
       </HomeWrapper>
     </HomeContainer>
