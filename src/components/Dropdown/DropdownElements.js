@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link as LinkS } from 'react-scroll';
 
 export const DropdownMenu = styled.ul`
   display: flex;
@@ -32,7 +31,7 @@ export const DropdownLi = styled.li`
   }
 `;
 
-export const DropdownLinks = styled(LinkS)`
+export const DropdownLinks = styled.a`
   display: flex;
   align-items: center;
   left: 20px;

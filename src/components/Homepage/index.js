@@ -73,47 +73,50 @@ export function Homepage() {
     <HomeContainer>
       <HomeWrapper>
         <InfoCard
+          id="home"
           header={header}
           paragraph="Development, product, and design."
           image={Lightbulb}
           title={true}
         />
-        <InfoCard header="Who am I" paragraph={paragraph} image={Men} />
+        <InfoCard id="whoAmI" header="Who am I" paragraph={paragraph} image={Men} />
         <InfoCard header="Product" image={CoffeeHand} reverse={true} paragraph={paragraph} />
         <InfoCard header="Engineering" image={BrewingCoffee} paragraph={paragraph} />
         <InfoCard header="Design" image={Latte} reverse={true} paragraph={paragraph} />
         <Subtitle className="subtitle">How this site was made</Subtitle>
-        <ImageWrapper>
-          <ImageCard
-            image={Notes}
-            subtext="Notes"
-            onClick={() => {
-              handleModal('Notes');
-            }}
-          />
-          <ImageCard
-            image={Drawing}
-            subtext="Design"
-            onClick={() => {
-              handleModal('Design');
-            }}
-          />
-          <ImageCard
-            image={Laptop}
-            subtext="Technology"
-            onClick={() => {
-              handleModal('Technology');
-            }}
-          />
-          {openModal && (
-            <Modal
-              type={modalType}
-              text={modalText}
-              icons={modalIcons}
-              setOpenModal={setOpenModal}
+        <div id="made">
+          <ImageWrapper>
+            <ImageCard
+              image={Notes}
+              subtext="Notes"
+              onClick={() => {
+                handleModal('Notes');
+              }}
             />
-          )}
-        </ImageWrapper>
+            <ImageCard
+              image={Drawing}
+              subtext="Design"
+              onClick={() => {
+                handleModal('Design');
+              }}
+            />
+            <ImageCard
+              image={Laptop}
+              subtext="Technology"
+              onClick={() => {
+                handleModal('Technology');
+              }}
+            />
+            {openModal && (
+              <Modal
+                type={modalType}
+                text={modalText}
+                icons={modalIcons}
+                setOpenModal={setOpenModal}
+              />
+            )}
+          </ImageWrapper>
+        </div>
       </HomeWrapper>
     </HomeContainer>
   );

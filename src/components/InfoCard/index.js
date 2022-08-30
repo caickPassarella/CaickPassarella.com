@@ -48,7 +48,7 @@ export function InfoCard(props) {
     }
   }
 
-  return handleReverse();
+  return <div id={props.id}>{handleReverse()}</div>;
 }
 
 InfoCard.propTypes = {
@@ -57,4 +57,5 @@ InfoCard.propTypes = {
   image: PropTypes.string,
   header: PropTypes.string,
   paragraph: PropTypes.string,
+  id: PropTypes.id,
 };

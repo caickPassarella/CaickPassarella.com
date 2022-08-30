@@ -31,6 +31,18 @@ export const InfoImage = styled.img`
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-duration: 1.2s;
+
+  @media screen and (max-width: 1700px) {
+    width: ${(props) => (props.title ? '800px' : '400px')};
+  }
+
+  @media screen and (max-width: 1500px) {
+    width: ${(props) => (props.title ? '700px' : '400px')};
+  }
+
+  @media screen and (max-width: 1350px) {
+    width: ${(props) => (props.title ? '600px' : '400px')};
+  }
 `;
 
 export const ImageShadow = styled.hr`

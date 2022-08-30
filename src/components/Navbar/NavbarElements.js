@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
   display: flex;
@@ -51,7 +50,7 @@ export const NavLogo = styled.div`
   }
 `;
 
-export const NavLinks = styled(LinkS)`
+export const NavLinks = styled.a`
   display: flex;
   align-items: center;
   font-size: 18px;

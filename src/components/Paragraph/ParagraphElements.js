@@ -21,6 +21,17 @@ export const ParagraphTitle = styled(ParagraphHeader)`
   font-weight: bolder;
   font-style: normal;
   letter-spacing: 0.1em;
+  @media screen and (max-width: 1700px) {
+    font-size: 80px;
+  }
+
+  @media screen and (max-width: 1500px) {
+    font-size: 70px;
+  }
+
+  @media screen and (max-width: 1350px) {
+    font-size: 60px;
+  }
 `;
 
 export const ParagraphText = styled.p`
