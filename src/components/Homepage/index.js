@@ -23,8 +23,8 @@ import {
   Javascript,
 } from '../../images';
 import { HomeContainer, HomeWrapper, ImageWrapper, Subtitle } from './HomepageElements.js';
-import { InfoCard } from '../InfoCard';
 import { ImageCard } from '../ImageCard';
+import { InfoCard } from '../InfoCard';
 import { Modal } from '../Modal';
 
 export function Homepage() {
