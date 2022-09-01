@@ -7,12 +7,12 @@ export const InfoImage = styled.img`
   backface-visibility: hidden;
 `;
 
-const movingUp = keyframes`
+const MovingUp = keyframes`
   from {transform: translateY(0px);}
   to {transform: translateY(-20px);}
 `;
 
-const movingOut = keyframes`
+const MovingOut = keyframes`
   from {transform: translateY(-20px);}
   to {transform: translateY(0px);}
 `;
@@ -26,11 +26,11 @@ export const SquareCard = styled.a`
   border-radius: 30px;
   margin: 0 30px;
   cursor: pointer;
-  animation-name: ${movingOut};
+  animation-name: ${MovingOut};
   animation-duration: 0.6s;
 
   &:hover {
-    animation-name: ${movingUp};
+    animation-name: ${MovingUp};
     animation-fill-mode: both;
     animation-duration: 1s;
   }
