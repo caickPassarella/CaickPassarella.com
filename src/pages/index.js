@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import Sidebar from '../components/Sidebar';
-import Navbar from '../components/Navbar';
-import { Homepage } from '../components/Homepage';
-import { Footer } from '../components/Footer';
+import Sidebar from '../Components/Sidebar';
+import Navbar from '../Components/Navbar';
+import { Homepage } from '../Components/Homepage';
+import { Footer } from '../Components/Footer';
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
