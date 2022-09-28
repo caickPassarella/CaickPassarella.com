@@ -2,6 +2,9 @@ export const MenuItems = [
   {
     title: 'Portuguese',
     path: '/pt',
-    cName: 'dropdown-link',
+  },
+  {
+    title: 'Test',
+    path: '/en',
   },
 ];

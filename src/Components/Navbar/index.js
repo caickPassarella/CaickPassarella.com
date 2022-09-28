@@ -1,15 +1,12 @@
 import PropTypes from 'prop-types';
-import { FaBars } from 'react-icons/fa';
-import { Nav, MobileIcon, NavMenu, NavItem, NavLinks, NavLogo } from './NavbarElements';
+import { Dropdown } from '../Dropdown';
+import { Nav, NavMenu, NavItem, NavLinks, NavLogo } from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavLogo>Caick Passarella</NavLogo>
-        <MobileIcon onClick={toggle}>
-          <FaBars />
-        </MobileIcon>
         <NavMenu>
           <NavItem>
             <NavLinks href="#home">Home</NavLinks>
@@ -24,6 +21,7 @@ const Navbar = ({ toggle }) => {
             <NavLinks href="#contact">Contact</NavLinks>
           </NavItem>
         </NavMenu>
+        <Dropdown></Dropdown>
       </Nav>
     </>
   );

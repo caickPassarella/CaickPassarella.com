@@ -49,6 +49,7 @@ export const ModalTitle = styled.h1`
 export const ModalText = styled.p`
   font-size: 16px;
   text-align: center;
+  white-space: pre-line;
   line-height: 25px;
   letter-spacing: 2px;
 `;

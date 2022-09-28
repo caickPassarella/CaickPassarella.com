@@ -36,6 +36,7 @@ export const ParagraphTitle = styled(ParagraphHeader)`
 
 export const ParagraphText = styled.p`
   color: #424242;
+  white-space: pre-line;
   margin-top: 20px;
   letter-spacing: 0.1em;
   line-height: 28px;

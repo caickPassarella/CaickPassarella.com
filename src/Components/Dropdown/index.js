@@ -4,6 +4,7 @@ import { MenuItems } from './MenuItems';
 
 export function Dropdown() {
   const [click, setClick] = useState(false);
+  const [language, setLanguage] = useState('English');
 
   const handleClick = () => setClick(!click);
 
@@ -11,17 +12,17 @@ export function Dropdown() {
     <>
       <DropdownMenu onClick={handleClick}>
         <DropdownLi>
-          <DropdownLinks to="english">English</DropdownLinks>
-          <DropdownContent>
-            {MenuItems.map((item, index) => {
-              return (
-                <DropdownLinks key={index} to={item.path} onClick={handleClick}>
-                  {item.title}
-                </DropdownLinks>
-              );
-            })}
-          </DropdownContent>
+          <DropdownLinks to="english">{language}</DropdownLinks>
         </DropdownLi>
+        {MenuItems.map((item, index) => {
+          return (
+            <DropdownContent key={index} click={click}>
+              <DropdownLinks to={item.path} onClick={handleClick}>
+                {item.title}
+              </DropdownLinks>
+            </DropdownContent>
+          );
+        })}
       </DropdownMenu>
     </>
   );
