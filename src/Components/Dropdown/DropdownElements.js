@@ -1,32 +1,33 @@
 import styled from 'styled-components';
 
-export const DropdownContent = styled.li`
-  display: ${(props) => (props.click ? 'block' : 'none')};
-  right: 0;
-  height: 40px;
-  right: 11px;
-  //box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-`;
-
-export const DropdownMenu = styled.ul`
-  list-style: none;
+export const NavDropDown = styled.ul`
+  list-style: none inside;
   text-align: center;
 `;
 
-export const DropdownLi = styled.li`
-  display: inline-block;
+export const DropdownMenu = styled(NavDropDown)`
+  z-index: 1;
+  position: absolute;
+  display: ${(props) => (props.click ? 'block' : 'none')};
+`;
+
+export const DropdownContent = styled.li`
+  display: block;
+  position: relative;
+  z-index: 1;
+`;
+
+export const DropdownLi = styled(DropdownContent)`
+  padding-top: 20px;
 `;
 
 export const DropdownLinks = styled.a`
   display: flex;
-  align-items: center;
-  left: 20px;
+  justify-content: center;
   font-size: 18px;
+  width: 200px;
   color: #424242;
   text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
   cursor: pointer;
 
   &:after {
@@ -34,8 +35,7 @@ export const DropdownLinks = styled.a`
     position: absolute;
     bottom: -1px;
     transition: opacity 0.2s linear;
-    width: 99%;
-    left: 0;
+    width: 45%;
     height: 1px;
     opacity: 0;
     border-radius: 200px;

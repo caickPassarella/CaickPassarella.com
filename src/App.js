@@ -1,5 +1,6 @@
 /* eslint-disable require-jsdoc */
 import './App.css';
+import i18n from './i18n';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages';
 

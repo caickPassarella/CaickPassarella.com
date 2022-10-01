@@ -12,13 +12,11 @@ export default function Home() {
   };
 
   return (
-    <>
-      <div style={{ border: '1px solid #424242', margin: '11px' }}>
-        <Sidebar isOpen={isOpen} toggle={toggle} />
-        <Navbar toggle={toggle} />
-        <Homepage />
-        <Footer />
-      </div>
-    </>
+    <div style={{ border: '1px solid #424242', margin: '11px' }}>
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
+      <Homepage />
+      <Footer />
+    </div>
   );
 }

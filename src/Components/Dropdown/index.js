@@ -1,5 +1,11 @@
 import { useState } from 'react';
-import { DropdownMenu, DropdownContent, DropdownLi, DropdownLinks } from './DropdownElements';
+import {
+  DropdownMenu,
+  DropdownContent,
+  DropdownLinks,
+  NavDropDown,
+  DropdownLi,
+} from './DropdownElements';
 import { MenuItems } from './MenuItems';
 
 export function Dropdown() {
@@ -9,21 +15,19 @@ export function Dropdown() {
   const handleClick = () => setClick(!click);
 
   return (
-    <>
-      <DropdownMenu onClick={handleClick}>
-        <DropdownLi>
-          <DropdownLinks to="english">{language}</DropdownLinks>
-        </DropdownLi>
+    <NavDropDown>
+      <DropdownContent onClick={handleClick}>
+        <DropdownLinks to={language}>{language}</DropdownLinks>
+      </DropdownContent>
+      <DropdownMenu click={click}>
         {MenuItems.map((item, index) => {
           return (
-            <DropdownContent key={index} click={click}>
-              <DropdownLinks to={item.path} onClick={handleClick}>
-                {item.title}
-              </DropdownLinks>
-            </DropdownContent>
+            <DropdownLi key={index} click={click} onClick={handleClick}>
+              <DropdownLinks to={item.path}>{item.title}</DropdownLinks>
+            </DropdownLi>
           );
         })}
       </DropdownMenu>
-    </>
+    </NavDropDown>
   );
 }
