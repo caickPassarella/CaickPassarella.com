@@ -1,10 +1,10 @@
 export const MenuItems = [
   {
-    title: 'Portuguese',
+    title: 'pt',
     path: '/pt',
   },
   {
-    title: 'Test',
+    title: 'en',
     path: '/en',
   },
 ];

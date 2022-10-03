@@ -29,7 +29,7 @@ export const DropdownLinks = styled.a`
   color: #424242;
   text-decoration: none;
   cursor: pointer;
-
+  /* 
   &:after {
     content: '';
     position: absolute;
@@ -49,5 +49,5 @@ export const DropdownLinks = styled.a`
       font-weight: bold;
       transition: opacity 0.2s linear;
     }
-  }
+  } */
 `;
