@@ -4,5 +4,41 @@
     "who": "Quem sou eu",
     "made": "Como esse site foi feito",
     "contact": "Contato"
+  },
+  "homepage": {
+    "me": {
+      "title": "Caick \nPassarella",
+      "subtitle": "Produto, engenharia, e design.",
+      "header": "quem sou eu",
+      "paragraph": "23 anos e atualmente morando no Brasil (mas aberto a realocação!). Tenho interessa na industria de tecnologia desde que eu me conheço. Sou uma pessoa muito calma, e sempre disposto a ajudar os outros. Além disso, amo tomar café, jogar video-games, e apreciar minha rotinha com minha esposa e 2 gatos.\n\nDesenvolvi esse site para que você possa entender melhor como eu penso e como é minha vida pelos olhos do design e tecnologia."
+    },
+    "product": {
+      "header": "Produto",
+      "paragraph": "O produto é de extrema importância para uma empresa, então precisamos trata-la como tal. Construi com meu time uma plataforma web (SaaS) do zero, incluindo a discussão das idéias, criação de todo o projeto e tarefas no Jira, e fazendo e design e desenvolvimento do produto em si. Para isso, utilizamos tecnologias como Node.js, React.js, MongoDB, MySQL, Redis, e mais.\n\nEu sei como avaliar um produto, e sei a diferença entre um produto bom e um produto ruim."
+    },
+    "engineering": {
+      "header": "Engenharia",
+      "paragraph": "Sou engenheiro com 5+ anos de experiência na indústria de tecnologia (B2B, B2C, SaaS, cloud, telecom), além de ter interesse desde sempre. Especialista em resolução de problemas complexos e fortaceler o time. Estamos aqui para aprender, ensinar, e construir.\nEu possuo experiência com Python/Shell scripting, Node.js, React.js, MySQL, VOIP/SIP (ler cabeçalho SIP, INVITES, pacotes de internet, RTP, TLS, Wireshark, etc), Git (incluindo GitHub e GitLab), e mais."
+    },
+    "design": {
+      "header": "Design",
+      "paragraph": "UI e UX estão em todo lugar, e por um bom motivo, eles tornam nossas vidas mais fáceis. Eu firmamente acredito que não podemos criar um ótimo produto sem um bom design, mas um bom produto nós podemos... Tenho experiência com Figma, Adobe XD, Photoshop, Illustrator, e conhecimento geral de UI/UX.\n\nSe você precisa de alguém para avaliar um design, criar um design que se encaixa bem com seu usuário, refazer seu produto, ou apenas ter uma mente criativa, eu posso ser essa pessoa."
+    },
+    "made": {
+      "title": "Como esse site foi feito",
+      "subtitle": "O que eu queria para este projeto é demonstrar uma combinação de arte, design, desenvolvimento, e eu. Essa combinação cria algo que chamo de visão de mim mesmo, onde apenas visualizando e operando o site, você entenderia pelo menos um pouco de quem sou, como penso e do que gosto.\nPara que isso seja possível, eu realizei diversas anotações, sessões de brainstorming, páginas de design, mudança de cores, e noites de desenvolvimento.\n\nÉ um projeto simples, mas importante."
+    },
+    "notesModal": {
+      "title": "Anotações",
+      "text": "Notion foi meu melhor amigo ao longo deste projeto. Em segundo lugar seria Google Docs e um café."
+    },
+    "designModal": {
+      "title": "Design",
+      "text": "Tenho paixão por design e gosto especialmente de estilos minimalistas. Para este projeto, usei o Figma para prototipagem, Styled Components, e inspirações achados por toda a internet."
+    },
+    "techModal": {
+      "title": "Tecnologia",
+      "text": "Como esta é uma página simples, usei React.js para front-end, Git com GitHub para controle de versão e Vercel (criador do Next.js) para hospedagem na web."
+    }
   }
 }
