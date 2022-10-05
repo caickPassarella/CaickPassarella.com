@@ -3,8 +3,19 @@ import styled, { keyframes } from 'styled-components';
 export const InfoImage = styled.img`
   max-width: 100%;
   max-height: 100%;
+  width: 235px;
   height: 235px;
   backface-visibility: hidden;
+
+  @media screen and (max-width: 1070px) {
+    width: 200px;
+    height: 200px;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 180px;
+    height: 180px;
+  }
 `;
 
 const MovingUp = keyframes`
@@ -21,10 +32,6 @@ export const SquareCard = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 300px;
-  border-radius: 30px;
-  margin: 0 30px;
   cursor: pointer;
   animation-name: ${MovingOut};
   animation-duration: 0.6s;
@@ -43,4 +50,5 @@ export const SubText = styled.p`
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 2px;
+  padding-top: 30px;
 `;

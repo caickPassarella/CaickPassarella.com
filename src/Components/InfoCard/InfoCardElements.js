@@ -10,7 +10,11 @@ export const InfoWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-bottom: 200px;
+  padding: 0 50px 200px;
+
+  @media screen and (max-width: 950px) {
+    padding: 0 30px 200px;
+  }
 `;
 
 const floating = keyframes`
@@ -43,6 +47,18 @@ export const InfoImage = styled.img`
   @media screen and (max-width: 1350px) {
     width: ${(props) => (props.title ? '600px' : '400px')};
   }
+
+  @media screen and (max-width: 1150px) {
+    width: ${(props) => (props.title ? '500px' : '350px')};
+  }
+
+  @media screen and (max-width: 950px) {
+    width: ${(props) => (props.title ? '400px' : '300px')};
+  }
+
+  @media screen and (max-width: 700px) {
+    width: ${(props) => (props.title ? '350px' : '250px')};
+  }
 `;
 
 export const ImageShadow = styled.hr`
@@ -53,4 +69,12 @@ export const ImageShadow = styled.hr`
   background-color: grey;
   border-radius: 50%;
   filter: blur(12px);
+
+  @media screen and (max-width: 1150px) {
+    width: 300px;
+  }
+
+  @media screen and (max-width: 950px) {
+    width: 200px;
+  }
 `;

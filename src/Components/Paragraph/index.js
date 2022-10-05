@@ -4,30 +4,31 @@ import {
   ParagraphHeader,
   ParagraphText,
   ParagraphSubTitle,
+  ParagraphWrapper,
 } from './ParagraphElements';
 
 export function Paragraph(props) {
   function handleParagraph() {
     if (props.title) {
       return (
-        <div>
+        <ParagraphWrapper>
           <ParagraphTitle>{props.header}</ParagraphTitle>
           <ParagraphSubTitle>{props.text}</ParagraphSubTitle>
-        </div>
+        </ParagraphWrapper>
       );
     } else if (props.reverse) {
       return (
-        <div style={{ textAlign: 'end' }}>
+        <ParagraphWrapper style={{ textAlign: 'end' }}>
           <ParagraphHeader>{props.header}</ParagraphHeader>
           <ParagraphText>{props.text}</ParagraphText>
-        </div>
+        </ParagraphWrapper>
       );
     } else {
       return (
-        <div>
+        <ParagraphWrapper>
           <ParagraphHeader>{props.header}</ParagraphHeader>
           <ParagraphText>{props.text}</ParagraphText>
-        </div>
+        </ParagraphWrapper>
       );
     }
   }

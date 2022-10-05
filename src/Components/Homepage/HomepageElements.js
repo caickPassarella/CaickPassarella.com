@@ -2,10 +2,6 @@ import styled from 'styled-components';
 
 export const HomeContainer = styled.div`
   background-color: #ffffff;
-
-  @media screen and (max-width: 768px) {
-    padding: 100px;
-  }
 `;
 
 export const HomeWrapper = styled.div`
@@ -15,9 +11,14 @@ export const HomeWrapper = styled.div`
 
 export const ImageWrapper = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin: 50px;
+  width: 100%;
+
+  /* @media screen and (max-width: 1070px) {
+    flex-direction: column;
+  } */
 `;
 
 export const SectionWrapper = styled.div`
@@ -36,6 +37,14 @@ export const Paragraph = styled.p`
   font-size: 16px;
   width: 1000px;
   text-align: center;
+
+  @media screen and (max-width: 1070px) {
+    width: 750px;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 500px;
+  }
 `;
 
 export const Subtitle = styled.h1`
