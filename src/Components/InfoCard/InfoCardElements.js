@@ -15,6 +15,22 @@ export const InfoWrapper = styled.div`
   @media screen and (max-width: 950px) {
     padding: 0 30px 200px;
   }
+
+  @media screen and (max-width: 780px) {
+    padding: 0 10px 200px;
+  }
+
+  @media screen and (max-width: 550px) {
+    flex-direction: column;
+    padding: 30px 10px 0;
+  }
+`;
+
+export const InfoWrapperReverse = styled(InfoWrapper)`
+  @media screen and (max-width: 550px) {
+    flex-direction: column-reverse;
+    padding: 50px 10px 0;
+  }
 `;
 
 const floating = keyframes`
@@ -53,11 +69,19 @@ export const InfoImage = styled.img`
   }
 
   @media screen and (max-width: 950px) {
-    width: ${(props) => (props.title ? '400px' : '300px')};
+    width: ${(props) => (props.title ? '400px' : '280px')};
   }
 
   @media screen and (max-width: 700px) {
     width: ${(props) => (props.title ? '350px' : '250px')};
+  }
+
+  @media screen and (max-width: 645px) {
+    width: ${(props) => (props.title ? '300px' : '200px')};
+  }
+
+  @media screen and (max-width: 595px) {
+    width: ${(props) => (props.title ? '250px' : '180px')};
   }
 `;
 
@@ -76,5 +100,13 @@ export const ImageShadow = styled.hr`
 
   @media screen and (max-width: 950px) {
     width: 200px;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 150px;
+  }
+
+  @media screen and (max-width: 595px) {
+    width: 120px;
   }
 `;

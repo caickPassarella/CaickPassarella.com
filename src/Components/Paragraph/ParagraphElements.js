@@ -2,6 +2,11 @@ import styled from 'styled-components';
 
 export const ParagraphWrapper = styled.div`
   padding: 20px;
+  text-align: ${(props) => (props.reverse ? 'end' : 'left')};
+
+  @media screen and (max-width: 550px) {
+    text-align: center;
+  }
 `;
 
 export const ParagraphHeader = styled.h1`
@@ -28,6 +33,10 @@ export const ParagraphSubTitle = styled.h2`
 
   @media screen and (max-width: 750px) {
     font-size: 17px;
+  }
+
+  @media screen and (max-width: 550px) {
+    font-size: 14px;
   }
 `;
 
@@ -56,6 +65,10 @@ export const ParagraphTitle = styled(ParagraphHeader)`
   @media screen and (max-width: 750px) {
     font-size: 40px;
   }
+
+  @media screen and (max-width: 550px) {
+    font-size: 30px;
+  }
 `;
 
 export const ParagraphText = styled.p`
@@ -74,6 +87,6 @@ export const ParagraphText = styled.p`
 
   @media screen and (max-width: 750px) {
     font-size: 12px;
-    width: 350px;
+    width: 300px;
   }
 `;

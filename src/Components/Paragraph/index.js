@@ -18,7 +18,7 @@ export function Paragraph(props) {
       );
     } else if (props.reverse) {
       return (
-        <ParagraphWrapper style={{ textAlign: 'end' }}>
+        <ParagraphWrapper reverse={true}>
           <ParagraphHeader>{props.header}</ParagraphHeader>
           <ParagraphText>{props.text}</ParagraphText>
         </ParagraphWrapper>

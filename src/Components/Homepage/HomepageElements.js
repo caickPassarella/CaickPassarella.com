@@ -40,10 +40,22 @@ export const Paragraph = styled.p`
 
   @media screen and (max-width: 1070px) {
     width: 750px;
+    font-size: 16px;
   }
 
   @media screen and (max-width: 800px) {
     width: 500px;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 650px) {
+    width: 500px;
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 550px) {
+    width: 420px;
+    font-size: 12px;
   }
 `;
 
@@ -54,4 +66,20 @@ export const Subtitle = styled.h1`
   font-style: normal;
   letter-spacing: 0.1em;
   text-align: center;
+
+  @media screen and (max-width: 1070px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 800px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 650px) {
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: 550px) {
+    font-size: 25px;
+  }
 `;

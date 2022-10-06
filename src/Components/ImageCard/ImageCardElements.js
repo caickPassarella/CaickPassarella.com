@@ -16,6 +16,11 @@ export const InfoImage = styled.img`
     width: 180px;
     height: 180px;
   }
+
+  @media screen and (max-width: 750px) {
+    width: 150px;
+    height: 150px;
+  }
 `;
 
 const MovingUp = keyframes`
