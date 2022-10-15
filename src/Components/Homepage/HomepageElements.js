@@ -57,6 +57,11 @@ export const Paragraph = styled.p`
     width: 420px;
     font-size: 12px;
   }
+
+  @media screen and (max-width: 480px) {
+    width: 400px;
+    font-size: 12px;
+  }
 `;
 
 export const Subtitle = styled.h1`
